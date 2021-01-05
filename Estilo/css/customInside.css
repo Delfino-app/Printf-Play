@@ -1,0 +1,26 @@
+:root{
+
+    --primary : #F44336;
+    --bcgWhite : #ffffff;
+    --dark : #343a40;
+    --azul : #0d1c39;
+    --semiWhite: #f7f7f7;
+}
+body{
+
+	background-color: var(--semiWhite);
+}
+
+/*===========Menu Sistema============*/
+.containerSiteMenu{
+
+    width:75% !important;
+}
+.bg-default{
+
+	background-color: var(--primary);
+}
+#logoLinkSiteMenu{
+
+	color:var(--bcgWhite);
+}

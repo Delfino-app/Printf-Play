@@ -1,0 +1,1139 @@
+:root{
+
+    --primary : #F44336;
+    --bcgWhite : #ffffff;
+    --dark : #343a40;
+    --azul : #0d1c39;
+    --semiWhite: #f7f7f7;
+}
+body{
+
+    font-family: 'open_sansregular' !important;
+    background-color:#f7f7f7;   /*#dadde1;*/
+    overflow-x: hidden !important;
+}
+/*============== Fonts =================*/
+    @font-face {
+        font-family: 'open_sansbold';
+        src: url('../fonts/fontes/opensans-bold-webfont.eot');
+        src: url('../fonts/fontes/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/fontes/opensans-bold-webfont.woff') format('woff'),
+             url('../fonts/fontes/opensans-bold-webfont.ttf') format('truetype'),
+             url('../fonts/fontes/opensans-bold-webfont.svg#open_sansbold') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+    @font-face {
+        font-family: 'open_sansregular';
+        src: url('../fonts/fontes/opensans-regular-webfont.eot');
+        src: url('../fonts/fontes/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/fontes/opensans-regular-webfont.woff') format('woff'),
+             url('../fonts/fontes/opensans-regular-webfont.ttf') format('truetype'),
+             url('../fonts/fontes/opensans-regular-webfont.svg#open_sansregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+    @font-face {
+        font-family: 'open_sanslight';
+        src: url('../fonts/fontes/opensans-light-webfont-webfont.eot');
+        src: url('../fonts/fontes/opensans-light-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/fontes/opensans-light-webfont-webfont.woff2') format('woff2'),
+             url('../fonts/fontes/opensans-light-webfont-webfont.woff') format('woff'),
+             url('../fonts/fontes/opensans-light-webfont-webfont.ttf') format('truetype'),
+             url('../fonts/fontes/opensans-light-webfont-webfont.svg#open_sanslight') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+
+
+
+    @font-face {
+        font-family: 'open_sanssemibold';
+        src: url('../fonts/fontes/opensans-semibold-webfont-webfont.eot');
+        src: url('../fonts/fontes/opensans-semibold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/fontes/opensans-semibold-webfont-webfont.woff2') format('woff2'),
+             url('../fonts/fontes/opensans-semibold-webfont-webfont.woff') format('woff'),
+             url('../fonts/fontes/opensans-semibold-webfont-webfont.ttf') format('truetype'),
+             url('../fonts/fontes/opensans-semibold-webfont-webfont.svg#open_sanssemibold') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+
+
+
+    @font-face {
+        font-family: 'open_sansextrabold';
+        src: url('../fonts/fontes/opensans-extrabold-webfont-webfont.eot');
+        src: url('../fonts/fontes/opensans-extrabold-webfont-webfont.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/fontes/opensans-extrabold-webfont-webfont.woff2') format('woff2'),
+             url('../fonts/fontes/opensans-extrabold-webfont-webfont.woff') format('woff'),
+             url('../fonts/fontes/opensans-extrabold-webfont-webfont.ttf') format('truetype'),
+             url('../fonts/fontes/opensans-extrabold-webfont-webfont.svg#open_sansextrabold') format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+.bg-red{
+
+    background-color:var(--primary);
+}
+.left-20{
+
+    margin-left:-40px !important;
+}
+.color_zinza{
+
+    color:#d1d1d1 !important;
+}
+#sectionMenuSite{
+
+    background-color: var(--bcgWhite);
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+    transition: box-shadow .2s;
+}
+.menuFixed{
+
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:999;
+    padding-top:unset !important;
+    padding-bottom:unset !important;
+}
+#logoLinkSiteMenu{
+
+    color: var(--primary);
+    font-weight:500;
+}
+.containerSiteMenu{
+
+    width:60% !important;
+}
+.imgLogoMenu{
+
+    border-radius:3px;width:35px;
+    margin-top: -5px;
+}
+.listaMenuSite{
+
+    margin-left:380px !important; 
+}
+
+.listaMenuSite .nav-item .nav-link{
+
+    color: var(--azul);
+    transition: color 0.3s;
+    padding-right:30px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.listaMenuSite .nav-item .nav-link:hover{
+
+    color: var(--primary);
+}
+.imgSite{
+
+    width:100%;
+    height:inherit;
+}
+.imgSongPoster{
+
+    width:100%;
+}
+
+#sectionMedia{
+
+    margin-top: 40px;
+    padding-top: 60px;
+    padding-bottom:60px;
+    background-color:var(--semiWhite);
+}
+#sectionMedia2{
+
+    margin-top: 40px;
+    padding-top: 60px;
+    padding-bottom:60px;
+    background-color:var(--white);
+}
+.card-media{
+
+    box-shadow: 0 4px 8px 0 rgba(244,67,54,0.1) !important;
+    transition: 0.3s;
+    padding-bottom:20px;
+    background-color:rgba(0,0,0,0.4)
+}
+.card-media:hover{
+
+    box-shadow: 0 8px 16px 0 rgba(244,67,54,0.1) !important;
+}
+#sectionSongs{
+    background-image: url("../../App/Vista/Imagens/login-bg-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    background-position: center;
+}
+#sectionSongsInside{
+
+    background-color:rgba(0,0,0,0.4);
+    padding-top:150px;
+    padding-bottom:100px;
+}
+.btnMidia{
+
+    background-color:var(--primary);
+    color:var(--bcgWhite);
+    margin-top:10px !important;
+}
+.btnMidiacenter{
+
+   padding: 2px 10px;
+   border-radius:unset;
+}
+.btnMidialeft{
+    margin-right:-5px;
+    padding: 2px 12px;
+    border-top-left-radius: 14px;
+    border-bottom-left-radius: 14px;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+}
+.btnMidiaright{
+    margin-left:-5px;
+    padding: 2px 12px;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+
+}
+#sectionStartNow{
+    
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom:50px;
+    background-color:var(--semiWhite);
+}
+.iconInfo{
+
+    color:var(--primary);
+    font-size:50px;
+}
+#txtInfoSite{
+
+    text-align:center;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-bottom:20px;
+    color: var(--azul);
+    line-height:28px;
+}
+.cardInfoSite{
+
+    background-color: transparent !important;
+    box-shadow:unset !important;
+    border: unset !important;
+}
+.textCardInfoSite{
+
+    color:white;
+    text-align: center;
+}
+.iconCardInfoSite{
+
+    text-align: center;
+    color: white;
+    padding-bottom:20px;
+}
+
+.iconCardInfoSite i{
+
+    font-size: 50px;
+    font-weight:300;
+}
+
+#SectionTop{
+
+    padding-top: 60px;
+    padding-bottom:60px;
+    background-color:white;
+}
+#btnMusicLisendContainer{
+
+    text-align: center;
+    margin-top:-25px;
+    padding-bottom:20px;
+}
+.btnMusicLisendSite{
+
+    color:white;
+    background-color:var(--primary);
+    border-radius:50%;
+    transition: background-color 0.3s;
+    margin-top:5px !important;
+}
+.btnMusicLisendSite:hover{
+
+    background-color:red;
+}
+.iconMusicLisendSite{
+
+    color:white;
+    font-size:18px;
+    font-weight:700;  
+} 
+.fa-angle-left{
+
+    margin-right:5px;
+}
+.fa-angle-right{
+
+    margin-left:3px;
+    margin-right:3px;
+}
+.fa-play{
+
+    font-size:18px;
+}
+.titleMusicLicendSite{
+
+    font-size:18px;
+    color:#d1d1d1; 
+}
+.artistMusicLicendSite{
+    
+    margin-top:-5px;
+    color:#d1d1d1; 
+}
+#txtInfoMusic{
+
+    text-align: left;
+    padding-bottom: 10px;
+}
+.strongNumber{
+
+    color:var(--primary); 
+}
+#txtInfoMusicSobre{
+
+    text-align: left;
+
+    font-size: 18px;
+}
+
+#sectionComecarAgora{
+
+    margin-top: 80px;
+    padding-top: 50px;
+    padding-bottom:50px;
+    background-color:#f7f7f7; 
+}
+.sectionLoginCriarContaContainer{
+
+    background-image: url("../../App/Vista/Imagens/login-bg-6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: fixed;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+    background-position: center; 
+}
+.sectionLoginCriarContaInside{
+
+    background-color:rgba(0,0,0,0.4);
+    padding-top:100px;
+    padding-bottom:120px;
+}
+#loginCriarContaContainer{
+
+    border-radius:5px;
+    padding:20px 25px;
+    transition: 0.3s;
+}
+.frmLoginCriarConta{
+
+    padding-top:10px;padding-bottom:5px;
+}
+.frmLoginCriarContaInfo{
+
+    font-size:17px;
+}
+.frmLoginCriarContaInfoBottom{
+
+    color:#6c757d;font-size:14px;
+}
+a.linkNovaConta{
+    color: var(--primary) !important;
+    text-decoration:underline;
+    font-weight:500;
+    font-size:16px;
+    cursor:pointer; 
+}
+a.linkNovaConta:hover{
+
+    color:red !important;
+}
+.nav-tabs{
+
+    display:inline-block;
+    width:100%;
+    border:unset;
+}
+.nav-tabs .nav-item .nav-link{
+
+    border-radius:unset;
+    border: unset;
+    padding-bottom:10px;
+}
+.linkComecarAgora{
+
+    padding:8px 18px;
+    border: unset;
+    color: var(--azul);
+    
+}
+.linkComecarAgora:hover{
+
+    color: var(--primary);
+}
+.nav-tabs .nav-item a.active{
+
+    color:var(--primary);
+}
+.spanSeparete{
+
+    padding:3px;
+}
+.btn{
+
+    border:1px solid var(--primary);
+    font-size:16px;
+    font-weight:500;
+    transition: color .3s;
+    margin-top:15px;
+}
+.btn:hover{
+
+    background-color:red;
+    color:white;
+}
+.btn-entrar{
+    background-color:var(--primary);
+    color:white;
+    border:1px solid var(--primary);   
+}
+.btnConta{
+
+    width:100% !important;
+}
+.btn-entrarSite{
+    background-color:transparent;
+    color: var(--primary); 
+}
+.padding_right{
+
+    padding-right:60px;
+}
+#sectionFoter{
+
+    background-color:var(--primary);
+    padding:5px;
+    bottom:0;
+}
+#footerInfo{
+
+    font-size:14px;
+    color:var(--white);
+    font-weight:500;
+    margin-top:5px;
+    text-align: center;
+    padding:unset;
+}
+
+#Logo{
+
+	color:var(--primary);
+    background-color: white;
+    padding: 6px 8px;
+    border-radius: 50%;
+    padding-left: 12px;
+    padding-top: 4px;
+    font-size: 20px;
+    margin-right: 5px;
+
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding-bottom:10px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+/*Pesquisa Container*/
+#pesquisaContainerMaster{
+
+    padding: 0px;
+}
+#pesquisaContainer{
+
+    padding: 2px 8px;
+}
+#frmPesquisar{
+
+    background-color: white;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.12), 0 0px 1px 0 rgba(0, 0, 0, 0.15);
+    padding:5px 10px;
+}
+#sectionSobre{
+
+    margin-top: 20px;
+    padding-top: 50px;
+    padding-bottom:50px;
+    background-color:var(--white); 
+}
+#txtPesquisar{
+
+    border-color: #f1f1f1;
+    border-radius:none !important;
+    transition: border .4s;
+}
+input[type="text"]#txtPesquisar:focus:not([readonly]) {
+    border-bottom:none;/* 1px solid #26a69a;*/
+    box-shadow:none;/* 0 1px 0 0 #26a69a;*/
+    transition: border .4s;
+    border:1px solid var(--primary);
+}
+input:focus:not([readonly]) {
+    border-bottom:none;/* 1px solid #26a69a;*/
+    box-shadow:none; /*0 1px 0 0 var(--primary);*/
+    border:1px solid var(--primary);
+    transition: border 0.3s;
+}
+button:focus:not([readonly]){
+
+    /*border-bottom:none !important;/* 1px solid #26a69a;*/
+    box-shadow:none !important;/* 0 1px 0 0 #26a69a;*/  
+}
+
+#btnPesquisar{
+
+    margin-left:-5px;
+    z-index: 999;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+}
+
+#palyerContainerBottom{
+
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: var(--bcgWhite);
+    box-shadow: 0 9px 5px 0 rgba(0, 0, 0, 0.12), 0 8px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
+/*============Sobre=============*/
+.btnFollowUs{
+    color: var(--primary);
+    transition:  color .3s;
+    font-size: 30px;
+}
+.btnFollowUs:hover{
+    color: red;
+}
+.abountLinks:hover{
+
+    text-decoration: unset;
+}
+#containerDev{
+
+    padding-top:10px;
+}
+#imgDev{
+
+   width:120px;
+   height:120px;
+   border-radius:50%;
+}
+#infoDev{
+
+    color:#6c757d;
+    padding-bottom:20px;
+    font-size:14px;
+}
+#bioDev{
+
+    color:#6c757d;
+    margin-top:10px;
+    font-size:15px;
+}
+
+/*========================Inside================================*/
+#headeSection{
+
+    margin-left:220px !important;
+}
+.menuInsideFixed{
+
+    box-shadow: 0 0 1px 0 rgba(0,0,0,0.1);
+    background:var(--white);
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:9;
+    padding-top:unset !important;
+    padding-bottom:unset !important;
+}
+#sectionMenuSistema{
+
+    background-color: var(--primary);
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+#logoLinkSistemaMenu{
+
+    color: var(--primary);
+    font-weight:500;
+    margin-left:15px;
+    margin-top:-15px;
+    margin-bottom:20px;
+}
+
+
+.listaMenuSistem .nav-item .nav-link{
+
+    color: var(--semiWhite);
+    transition: color 0.3s;
+    font-size: 15px;
+    font-weight: 500;
+}
+.listaMenuSistem .nav-item .nav-link:hover{
+
+    color: var(--bcgWhite);
+}
+.imgUserMenu{
+
+   width:25px;
+   height:25px;
+   border-radius:50%;
+}
+.containerSistemMenu{
+
+    width:70% !important;
+}
+
+/*==============Player================*/
+#volbtnContainer{
+
+	padding:0px;
+	padding-right:4px;
+}
+#volIcon{
+
+	color: var(--primary);
+	padding-left: 2px;
+}
+#espace{
+	padding:2px;
+}
+#vol-control-container{
+
+	padding-left:0px;
+	padding-right:0px
+}
+#volbtnContainer a{
+	font-size:22px;
+	margin-right:-3px;
+	padding-left:10px
+}
+#current_duration{
+
+	margin-left: -15px;
+}
+#total_duaration{
+
+	margin-left:-20px;
+	padding-right: 10px;
+}
+
+
+audio{
+	width:100%;
+}
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 220px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color:var(--white);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: auto;
+    --webkit overflow scrolling:touch;
+    --ms overflow style: ms autohiding scrollbar;
+    padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a.linkSideBar {
+    padding: 6px 8px 6px 26px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: color .3s;
+}
+.sidenav a.linkSideBar i{
+
+    padding-right:10px;
+}
+.sidenav a.linkSideBar i.float-right{
+
+    margin-top:5px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a.active{
+    color: var(--primary) !important;
+}
+.sidenav a.linkSideBar:hover {
+    color: var(--primary);
+}
+
+/* Style page content */
+#main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+#sectionFoterInside{
+
+    background-color:var(--primary);
+    position: fixed;
+    bottom:0;
+    width:100%;
+    z-index:9;
+    padding:10px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+.PlayListList{
+
+    list-style-type:none;
+}
+.PlayListList li a{
+
+    padding: 6px 8px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #818181;
+    display: block;
+    transition: color .3s;
+}
+.PlayListList li a:hover{
+
+    color:var(--primary);
+}
+
+/*============Inside Inicio=====================*/
+.container_pg{
+
+    overflow-y:auto;
+    --webkit overflow scrolling:touch;
+    --ms overflow style: ms autohiding scrollbar;
+    margin-left:220px !important;
+    padding-bottom:100px;
+}
+.container_pg .row{
+
+    padding:15px 20px
+}
+.paddingBottom_20{
+
+    padding-bottom:20px;
+}
+#frmPesquisaInicio{
+
+    padding:10px 0px;
+    width:100%;
+}
+#txtPesquisaValue{
+
+    width:80%;
+    padding:2.30px 5px;
+    font-size:14px;
+    /*border:1px solid rgba(0,0,0,.125);*/
+}
+input[type="text"]#txtPesquisaValue:focus{
+    border-bottom:none !important;/* 1px solid #26a69a;*/
+    box-shadow:none !important;/* 0 1px 0 0 #26a69a;*/
+    transition: border .4s !important;
+    border-radius:unset !important;
+    border:1px solid var(--primary) !important;
+}
+#btnPesquisar{
+    margin-top:-3px;
+    padding:2px 10px;
+    background: var(--primary);
+    color:white;
+}
+#linkUserInfo{
+
+    font-size:14px;
+    color: #818181;
+}
+.containerMusicList{
+
+    margin-bottom:15px;
+}
+.card-list{
+
+    box-shadow:unset !important;
+    padding-bottom:unset;
+}
+.card-list:hover{
+
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1) !important;
+}
+.imgMusicList{
+
+    width:100%;
+    height:130px
+}
+.titleMusicList{
+
+    font-size:13px;
+    font-weight:bold;
+    padding-top:5px;
+    margin-top:5px;
+}
+.artistMusicList{
+   font-size:12px;
+   margin-top:-5px; 
+}
+.actionMusicList{
+
+    text-decoration:none !important;
+    color:#818181;
+    transition: color .3s;  
+}
+.actionMusicList:hover{
+
+    color:var(--primary);
+    text-decoration:none !important;    
+}
+.duracaoMusicList{
+
+    font-size:12px;
+}
+.musicPlayControls{
+
+    background:transparent;
+}
+.musicPlayControls i{
+   color:var(--white);
+   transition:color .3s;
+   font-size:26px;
+}
+.play i{
+
+    font-size:48px !important;  
+}
+.musicPlayControls:hover{
+
+    text-decoration:none !important;
+}
+.musicPlayTitle{
+
+    font-size:13px;
+    font-weight:bold;
+    color:#f7f7f7;
+    display:block;
+    padding-left:10px;
+    margin-top:5px;
+}
+.musicPlayArtista{
+
+    font-size:12px;
+    color:#f7f7f7;
+    display:block;
+    padding-left:10px;
+    margin-top:-5px;
+}
+.Rowinside{
+
+    padding-bottom:50px !important;
+    margin-top:-20px !important;
+}
+.insideTitle{
+
+    padding-bottom:15px;
+    color:var(--primary);
+}
+.mySongsMusicList{
+
+    display:inline-flex;
+    padding:0;
+    width:100%;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-bottom:15px;
+}
+.mySongsMusicList:hover{
+
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+.no_padding{
+
+    padding:0 !important;
+}
+.mySongsImgMusicList{
+
+    width:100% !important;
+    height:100% !important;
+}
+.mySongsActionsMusicList{
+
+    margin-top:-15px;
+    padding-bottom:10px;
+}
+/*=============Publicações=================*/
+.publushContainer{
+
+    width:100%;
+    min-height:350px !important;
+    max-height:350px !important;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    margin-bottom:60px;
+}
+.publushContainer:hover{
+
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+.publishHead{
+
+    padding-top:5px;
+    padding-bottom:5px;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+.userPublish{
+    
+    display:inline-flex;
+}
+.userPublish p{
+
+    font-size:14px;
+    color: #212529;
+    margin-top:5px;
+}
+.userPublish img{
+
+    margin-left:-15px;
+    margin-right:5px;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+}
+.publishData{
+
+    float:right;
+}
+.publishBody{
+
+    padding:5px;
+}
+.publishBody p{
+
+   font-size:14px;
+   color:#818181;
+   padding-top:10px;
+}
+.publishFooter{
+
+    border-top: 1px solid rgba(0,0,0,.125);
+    padding:10px 5px;
+}
+.publishFooter p a{
+
+    font-size:13px;
+    color:#818181;
+    transition:color .3s;
+}
+.publishFooter p a:hover{
+
+    color:var(--primary);
+    text-decoration:none;
+}
+/*================Músicas=====================*/
+.table-hover{
+
+    transition: color .3s;
+}
+table{
+
+    overflow-y:auto;
+    --webkit overflow scrolling:touch;
+    --ms overflow style: ms autohiding scrollbar;
+}
+tr{
+    padding:unset;
+    max-height:50px;
+}
+th{
+
+    font-weight:400;
+}
+td{
+
+    font-size:14px;
+    color:#818181;
+    padding:unset;
+}
+.td-extend{
+
+    min-width:150px;
+}
+.imgMusicListTable{
+
+    width:50px;
+    height:50px;
+    margin-top:-10px;
+}
+.actionMusicListTable{
+
+    text-decoration:none !important;
+    color:#818181;
+    transition: color .3s;
+    font-size:16px;  
+}
+.actionMusicListTable:hover{
+
+    color:var(--primary);
+    text-decoration:none !important;    
+}
+.displayPageMusicasHeader{
+
+    padding:25px 10px;
+    background-color:white;
+    padding-bottom:30px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-bottom:unset;
+    border-top-left-radius:3px;
+    border-top-right-radius:3px;
+}
+.btnPlayAll{
+
+    font-size:14px;
+    background-color:red;
+    color:white;
+    transition: background-color .3s;
+    margin-top:-20px;
+}
+.btnPlayAll:hover{
+
+    background:var(--primary);
+    color:white;
+}
+
+/*==============Teste==================*/
+
+::-webkit-scrollbar{
+
+    width:9px;
+}
+::-webkit-scrollbar-thumb{
+
+    -webkit-border-radius:10px;
+    border-radius:10px;
+    -webkit-background:rgba(255,0,0,0.8) !important;
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+/*Reprovado*/ 
+
+/*input[type='range'].teste::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 68px;
+    height: 44px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #fefefe),
+        color-stop(0.49, #dddddd),
+        color-stop(0.51, #d1d1d1),
+        color-stop(1, #a1a1a1)
+    );
+    background-repeat: no-repeat;
+    background-position: 50%;
+}*/
+input[type="range"].teste:focus{
+    border:unset !important;
+}
+input[type="range" i] {
+    color: rgb(16, 16, 16);
+    cursor: default;
+    padding: initial;
+    border: unset !important;
+    margin:unset;
+}
+input[type="range"].teste {
+   -webkit-appearance:none;
+   background-color:#f1f1f1;  
+   margin-top:32px;
+   height:5px;
+}
+input[type="range"].teste::-webkit-slider-thumb {
+    -webkit-appearance:none;
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background-color:red !important;
+    box-shadow: 1px 2px 3px rgba(0,0,0,0.6);
+    color:red;
+}
